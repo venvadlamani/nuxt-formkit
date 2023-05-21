@@ -120,3 +120,8 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+function handleSubmitSupportRequest() {
+  console.log('awesome');
+}
+</script>

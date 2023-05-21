@@ -2,6 +2,8 @@
 import { generateClasses } from '@formkit/themes';
 import { genesisIcons } from '@formkit/icons';
 
+// I think some rounded styles are at the inner they should probably be at input you also should check border colors and outlines to be used in the same place or at least have they inherit the border-radius.
+
 export default {
   icons: {
     ...genesisIcons,
@@ -52,8 +54,8 @@ export default {
         emptyMessageInner:
           'flex items-center justify-center text-sm p-2 text-center w-full text-stone-500 [&>span]:mr-3 [&>span]:ml-0',
         inner:
-          'max-w-md relative flex ring-1 ring-stone-400 focus-within:ring-emerald-500 focus-within:ring-2 rounded mb-1 formkit-disabled:focus-within:ring-stone-400 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-emerald-500',
-        input: 'w-full px-3 py-2',
+          'max-w-md relative flex ring-1 ring-stone-400 focus-within:ring-emerald-500 focus-within:ring-2  mb-1 formkit-disabled:focus-within:ring-stone-400 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-emerald-500',
+        input: 'w-full px-3 py-2 rounded-3xl',
         listbox: 'bg-white drop-shadow-lg rounded overflow-hidden',
         listboxButton: 'flex w-12 self-stretch justify-center mx-auto',
         listitem:
