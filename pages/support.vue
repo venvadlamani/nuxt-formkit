@@ -89,7 +89,15 @@
             :options="['Email', 'Phone Call']"
           />
         </div>
-        <div class="mt-2.5">Attach files</div>
+        <div class="mt-2.5 py-6">
+          <UButton
+            icon="i-heroicons-plus-solid"
+            size="lg"
+            color="gray"
+            square
+            variant="outline"
+          />
+        </div>
         <div class="mt-2.5">
           <FormKit type="submit" label="Submit Request" />
         </div>

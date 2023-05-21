@@ -95,13 +95,13 @@ export default {
       },
       radio: {
         fieldset: 'ring-1 ring-gray-300',
-        legend: 'z-10 bg-gray-100 pl-2 pr-4',
+        legend: 'z-10 bg-gray-100 dark:bg-gray-800 pl-2 pr-4',
         help: 'px-2',
         options: 'px-4 py-2',
-        option: 'py-1',
+        option: 'py-1 ',
         decorator: 'rounded-full',
         decoratorIcon: 'w-5 p-[5px] ',
-        label: 'px-4',
+        label: 'px-4 text-gray-800 dark:text-gray-400',
       },
       range: {
         inner: '$reset flex items-center max-w-md',
