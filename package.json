@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/uil": "^1.1.4",
     "@nuxthq/ui": "npm:@nuxthq/ui-edge@latest",
     "@types/node": "^18",
     "nuxt": "^3.5.0"
