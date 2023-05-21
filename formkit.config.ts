@@ -72,9 +72,9 @@ export default {
       },
       'family:text': {
         inner:
-          'flex items-center max-w-md ring-1 ring-stone-400 focus-within:ring-emerald-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-emerald-500 rounded-xl mb-1',
+          'flex items-center max-w-md ring-1 ring-stone-400 focus-within:ring-emerald-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-emerald-500  mb-1',
         input:
-          'w-full px-3 py-2 border-none text-base text-stone-700 dark:text-stone-200 placeholder-stone-400 focus:shadow-outline',
+          'w-full px-3 py-2 border-none text-base rounded-3xl text-stone-700 dark:text-stone-200 placeholder-stone-400 focus:shadow-outline',
       },
       'family:date': {
         inner:
