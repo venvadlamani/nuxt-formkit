@@ -3,7 +3,7 @@
     <div class="bg-gray-100 dark:bg-gray-800">
       <div
         class="
-          max-w-4xl
+          container
           flex flex-col
           min-h-screen
           px-4
