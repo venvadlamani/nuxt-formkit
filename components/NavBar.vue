@@ -17,7 +17,7 @@
             >Astro</span
           ></NuxtLink
         >
-        <div class="hidden w-full lg:block lg:w-auto">
+        <div class="w-full lg:block lg:w-auto">
           <ul class="flex flex-row items-center justify-center space-x-2">
             <li>
               <UButton
