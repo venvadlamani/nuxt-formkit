@@ -80,15 +80,6 @@
         </div>
         <div class="mt-2.5">
           <FormKit
-            id="attachment"
-            name="attachment"
-            type="file"
-            label="Attachments"
-            help="Attach any relevant files here"
-          />
-        </div>
-        <div class="mt-2.5">
-          <FormKit
             id="contact_preference"
             name="contact_preference"
             type="radio"
@@ -98,6 +89,7 @@
             :options="['Email', 'Phone Call']"
           />
         </div>
+        <div class="mt-2.5">Attach files</div>
         <div class="mt-2.5">
           <FormKit type="submit" label="Submit Request" />
         </div>

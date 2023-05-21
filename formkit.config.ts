@@ -93,22 +93,6 @@ export default {
           '$reset appearance-none w-full cursor-pointer border-none rounded p-0 m-0 bg-transparent [&::-webkit-color-swatch-wrapper]:p-0 [&::-webkit-color-swatch]:border-none',
         suffixIcon: 'min-w-[2.5em] pr-0 pl-0 m-auto',
       },
-      file: {
-        fileItem: 'flex items-center text-gray-800 mb-1 last:mb-0',
-        fileItemIcon: 'w-4 mr-2 shrink-0',
-        fileList:
-          'shrink grow peer px-3 py-2 formkit-multiple:data-[has-multiple="true"]:mb-6',
-        fileName: 'break-all grow text-ellipsis',
-        fileRemove:
-          'relative z-[2] ml-auto text-[0px] hover:text-red-500 pl-2 peer-data-[has-multiple=true]:text-sm peer-data-[has-multiple=true]:text-primary-500 peer-data-[has-multiple=true]:ml-3 peer-data-[has-multiple=true]:mb-2 formkit-multiple:bottom-[0.15em] formkit-multiple:pl-0 formkit-multiple:ml-0 formkit-multiple:left-[1em] formkit-multiple:formkit-prefix-icon:left-[3.75em]',
-        fileRemoveIcon: 'block text-base w-3 relative z-[2]',
-        inner:
-          'relative max-w-md cursor-pointer formkit-multiple:[&>button]:absolute',
-        input:
-          'cursor-pointer text-transparent absolute top-0 right-0 left-0 bottom-0 opacity-0 z-[2]',
-        noFiles: 'flex w-full items-center px-3 py-2 text-gray-400',
-        noFilesIcon: 'w-4 mr-2',
-      },
       radio: {
         fieldset: 'ring-1 ring-gray-300',
         legend: 'z-10 bg-gray-100 pl-2 pr-4',
