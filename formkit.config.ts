@@ -103,7 +103,7 @@ export default {
         inner:
           'relative max-w-md cursor-pointer formkit-multiple:[&>button]:absolute',
         input:
-          'cursor-pointer text-transparent absolute top-0 right-0 left-0 bottom-0 opacity-0 z-[2]',
+          'cursor-pointer text-transparent absolute rounder-xl top-0 right-0 left-0 bottom-0 opacity-0 z-[2]',
         noFiles: 'flex w-full items-center px-3 py-2 text-stone-400',
         noFilesIcon: 'w-4 mr-2',
       },
