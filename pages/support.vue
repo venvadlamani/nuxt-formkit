@@ -90,9 +90,14 @@
           />
         </div>
         <div class="mt-2.5 py-6">
+          <h3>Attachments</h3>
+          <p class="text-sm dark:text-gray-400">
+            Upload up to 5 screenshots that might be relevant to the issue that
+            you're facing
+          </p>
           <UButton
             icon="i-heroicons-plus-solid"
-            size="lg"
+            size="xl"
             color="gray"
             square
             variant="outline"
