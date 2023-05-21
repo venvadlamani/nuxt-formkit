@@ -18,7 +18,7 @@ export default {
           'formkit-disabled:bg-gray-200 formkit-disabled:cursor-not-allowed formkit-disabled:pointer-events-none',
         input:
           'appearance-none bg-transparent focus:outline-none focus:ring-0 focus:shadow-none ',
-        label: 'block mb-1 font-bold text-sm',
+        label: 'block mb-2 font-bold text-sm',
         legend: 'font-bold text-sm',
         loaderIcon: 'inline-flex items-center w-4 text-gray-600 animate-spin',
         message: 'text-red-500 mb-1 text-xs',
@@ -74,7 +74,7 @@ export default {
         inner:
           'flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-primary-500  mb-1',
         input:
-          'w-full px-3 py-2 border-none text-base rounded-3xl text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:shadow-outline',
+          'w-full px-3 py-2 border-none text-base rounded-xl text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:shadow-outline',
       },
       'family:date': {
         inner:
@@ -132,7 +132,7 @@ export default {
         inner:
           'flex max-w-md  mb-1 ring-1 ring-gray-400 focus-within:ring-primary-500 [&>label:first-child]:focus-within:text-primary-500',
         input:
-          'block w-full h-32 px-3 py-3 rounded-3xl border-none text-base text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:shadow-outline',
+          'block w-full h-32 px-3 py-3 rounded-xl border-none text-base text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:shadow-outline',
       },
     }),
   },
