@@ -121,9 +121,9 @@ export default {
       },
       select: {
         inner:
-          'flex relative max-w-md items-center  mb-1 ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2 [&>span:first-child]:focus-within:text-primary-500',
+          'flex relative max-w-md items-center  mb-1 ring-1 ring-gray-400 focus-within:ring-primary-600 focus-within:ring-2 [&>span:first-child]:focus-within:text-primary-500',
         input:
-          'w-full pl-3 pr-8 py-2 border-none rounded-xl text-base text-gray-700 placeholder-gray-400 formkit-multiple:p-0 data-[placeholder="true"]:text-gray-400 formkit-multiple:data-[placeholder="true"]:text-inherit',
+          'w-full pl-3 pr-8 py-2 border-none rounded-xl text-base text-gray-700 placeholder-gray-400 dark:text-gray-300 dark:placeholder-gray-100 formkit-multiple:p-0 dark:bg-gray-500',
         selectIcon:
           'flex p-[3px] shrink-0 w-5 mr-2 -ml-[1.5em] h-full pointer-events-none',
         option: 'formkit-multiple:p-3 formkit-multiple:text-sm text-gray-700',
