@@ -12,7 +12,7 @@ export default {
     classes: generateClasses({
       // Global styles apply to _all_ inputs with matching section keys
       global: {
-        fieldset: 'max-w-md border border-gray-400 rounded px-2 pb-1',
+        fieldset: 'max-w-md border border-gray-400 rounded-xl px-2 pb-1',
         help: 'text-xs text-gray-500',
         inner:
           'formkit-disabled:bg-gray-200 formkit-disabled:cursor-not-allowed formkit-disabled:pointer-events-none',
@@ -110,8 +110,14 @@ export default {
         noFilesIcon: 'w-4 mr-2',
       },
       radio: {
-        decorator: 'rounded-full mr-2',
+        fieldset: 'ring-1 ring-gray-300',
+        legend: 'z-10 bg-gray-100 px-4',
+        help: 'px-4',
+        options: 'px-4 py-2',
+        option: 'py-1',
+        decorator: 'rounded-full',
         decoratorIcon: 'w-5 p-[5px] ',
+        label: 'px-4',
       },
       range: {
         inner: '$reset flex items-center max-w-md',
