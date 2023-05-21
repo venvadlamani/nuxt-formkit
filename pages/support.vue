@@ -3,11 +3,6 @@
     class="flex flex-col justify-center min-h-full px-6 py-12 lg:px-8 w-full"
   >
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-      <img
-        class="w-auto h-10 mx-auto"
-        src="https://tailwindui.com/img/logos/mark.svg?color=primary&shade=600"
-        alt="Your Company"
-      />
       <h2
         class="
           mt-10
@@ -19,7 +14,7 @@
           dark:text-gray-200
         "
       >
-        Juniper Health Support
+        Support
       </h2>
     </div>
 
