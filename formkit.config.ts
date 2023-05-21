@@ -76,7 +76,7 @@ export default {
         inner:
           'flex items-center max-w-md ring-0 [&>label:first-child]:focus-within:text-primary-500 rounded mb-1',
         input:
-          'w-full px-3 py-2 border-none text-base text-gray-700 placeholder-gray-400 rounded-xl',
+          'w-full px-3 py-2 border-none text-base text-gray-700 dark:text-gray-400 placeholder-gray-400 rounded-xl',
       },
       'family:date': {
         inner:
@@ -124,7 +124,7 @@ export default {
         inner:
           'flex max-w-md rounded mb-1 ring-0 [&>label:first-child]:focus-within:text-primary-500',
         input:
-          'block w-full h-32 px-3 py-3 border-none text-base text-gray-700 placeholder-gray-400 focus:shadow-outline rounded-xl',
+          'block w-full h-32 px-3 py-3 border-none text-base text-gray-900 dark:text-gray-400 placeholder-gray-400 focus:shadow-outline rounded-xl',
       },
     }),
   },
