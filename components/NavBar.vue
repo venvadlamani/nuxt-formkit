@@ -1,79 +1,66 @@
 <template>
-  <nav class="border border-red-500 w-full">
+  <nav class="w-full">
     <div class="flex flex-row items-center justify-between py-6 w-full">
-      <div class="flex flex-row justify-between items-center space-x-2">
-        <div>
-          <NuxtLink to="/">
-            <span
-              class="
-                self-center
-                text-xl
-                font-semibold
-                uppercase
-                whitespace-nowrap
-                sm:text-2xl
-                mr-4
-                text-primary-600
-              "
-              >Astro</span
-            ></NuxtLink
-          >
-          <ul class="flex flex-row items-center justify-center space-x-2">
-            <li>
+      <div class="flex flex-row justify-between items-center">
+        <NuxtLink to="/">
+          <span
+            class="
+              self-center
+              text-xl
+              font-semibold
+              uppercase
+              whitespace-nowrap
+              sm:text-3xl
+              mr-4
+              text-primary-600
+            "
+            >Astro</span
+          ></NuxtLink
+        >
+        <ul class="flex flex-row items-center justify-center space-x-2">
+          <li>
+            <UDropdown
+              class="cursor-pointer"
+              :items="items"
+              :popper="{ placement: 'bottom-start' }"
+            >
               <UButton
-                icon="i-heroicons-home"
+                icon="i-heroicons-user-circle"
                 size="lg"
                 color="gray"
                 variant="ghost"
-                label="Dashboard"
-                @click.prevent="navigateTo('/')"
+                label="Account"
                 :trailing="false"
               />
-            </li>
-            <li>
-              <UDropdown
-                class="cursor-pointer"
-                :items="items"
-                :popper="{ placement: 'bottom-start' }"
-              >
-                <UButton
-                  icon="i-heroicons-user-circle"
-                  size="lg"
-                  color="gray"
-                  variant="ghost"
-                  label="Account"
-                  :trailing="false"
-                />
-              </UDropdown>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <UButton
-                icon="i-heroicons-arrow-right-on-rectangle-20-solid"
-                size="lg"
-                color="gray"
-                variant="ghost"
-                label="Support"
-                :trailing="false"
-                @click="navigateTo('/support')"
-              />
-            </li>
-            <li>
-              <UButton
-                icon="i-heroicons-arrow-right-on-rectangle-20-solid"
-                size="lg"
-                color="gray"
-                variant="ghost"
-                label="Sign out"
-                :trailing="false"
-                @click.prevent="signout()"
-              />
-            </li>
-          </ul>
-        </div>
+            </UDropdown>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="flex flex-row justify-between items-center">
+          <li>
+            <UButton
+              icon="i-heroicons-arrow-right-on-rectangle-20-solid"
+              size="lg"
+              color="gray"
+              variant="ghost"
+              label="Support"
+              :trailing="false"
+              @click="navigateTo('/support')"
+            />
+          </li>
+          <li>
+            <UButton
+              icon="i-heroicons-arrow-right-on-rectangle-20-solid"
+              size="lg"
+              color="gray"
+              variant="ghost"
+              label="Sign out"
+              :trailing="false"
+              @click.prevent="signout()"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -95,13 +82,6 @@ const items = [
       label: 'Appointments',
       icon: 'i-heroicons-calendar-days-20-solid',
       to: '/appointments',
-    },
-  ],
-  [
-    {
-      label: 'Support',
-      icon: 'i-heroicons-question-mark-circle-20-solid',
-      to: '/support',
     },
   ],
 ];
