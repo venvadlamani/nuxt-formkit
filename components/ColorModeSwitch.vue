@@ -9,11 +9,11 @@ const onClick = () =>
 <template>
   <button aria-label="Color Mode" class="inline-block" @click="onClick">
     <template v-if="colorMode.value === 'dark'">
-      <UIcon name="uil:moon" class="w-6 h-6" />
+      <UIcon name="i-heroicons-moon" class="w-4 h-4" />
       <span class="sr-only">Dark Mode</span>
     </template>
     <template v-else>
-      <UIcon name="uil:lightbulb-alt" class="w-6 h-6" />
+      <UIcon name="i-heroicons-light-bulb" class="w-4 h-4" />
       <span class="sr-only">Light Mode</span>
     </template>
   </button>
