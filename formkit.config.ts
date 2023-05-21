@@ -17,18 +17,19 @@ export default {
         inner:
           'formkit-disabled:bg-gray-200 formkit-disabled:cursor-not-allowed formkit-disabled:pointer-events-none',
         input:
-          'appearance-none bg-transparent focus:outline-none focus:ring-0 focus:shadow-none ',
+          'appearance-none bg-transparent focus:outline-none focus:ring-0 focus:shadow-none',
         label: 'block mb-1 font-bold text-sm',
         legend: 'font-bold text-sm',
         loaderIcon: 'inline-flex items-center w-4 text-gray-600 animate-spin',
         message: 'text-red-500 mb-1 text-xs',
         messages: 'list-none p-0 mt-1 mb-0',
-        outer: 'mt-2 mb-4 formkit-disabled:opacity-50',
+        outer: 'mb-4 formkit-disabled:opacity-50',
         prefixIcon:
           'w-10 flex self-stretch grow-0 shrink-0 rounded-tl rounded-bl border-r border-gray-400 bg-white bg-gradient-to-b from-transparent to-gray-200 [&>svg]:w-full [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto',
         suffixIcon:
           'w-7 pr-3 flex self-stretch grow-0 shrink-0 [&>svg]:w-full [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto',
       },
+
       // Family styles apply to all inputs that share a common family
       'family:box': {
         decorator:
@@ -38,12 +39,13 @@ export default {
         help: 'mb-2 mt-1.5',
         input:
           'absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none peer',
+        inner: '$remove:formkit-disabled:bg-gray-200',
         label: '$reset text-sm text-gray-700 mt-1 select-none',
         wrapper: 'flex items-center mb-1',
       },
       'family:button': {
         input:
-          '$reset w-full inline-flex items-center justify-center bg-primary-600 text-white text-sm font-normal py-3 px-6 rounded-xl focus-visible:outline-2 focus-visible:outline-primary-600 focus-visible:outline-offset-2 formkit-disabled:bg-gray-400 formkit-loading:before:w-4 formkit-loading:before:h-4 formkit-loading:before:mr-2 formkit-loading:before:border formkit-loading:before:border-2 formkit-loading:before:border-r-transparent formkit-loading:before:rounded-3xl formkit-loading:before:border-white formkit-loading:before:animate-spin',
+          '$reset inline-flex items-center bg-primary-600 text-white text-sm font-normal py-3 px-6 rounded focus-visible:outline-2 focus-visible:outline-primary-600 focus-visible:outline-offset-2 formkit-disabled:bg-gray-400 formkit-loading:before:w-4 formkit-loading:before:h-4 formkit-loading:before:mr-2 formkit-loading:before:border formkit-loading:before:border-2 formkit-loading:before:border-r-transparent formkit-loading:before:rounded-3xl formkit-loading:before:border-white formkit-loading:before:animate-spin',
         wrapper: 'mb-1',
         prefixIcon: '$reset block w-4 -ml-2 mr-2 stretch',
         suffixIcon: '$reset block w-4 ml-2 stretch',
@@ -54,8 +56,8 @@ export default {
         emptyMessageInner:
           'flex items-center justify-center text-sm p-2 text-center w-full text-gray-500 [&>span]:mr-3 [&>span]:ml-0',
         inner:
-          'max-w-md relative flex ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2  mb-1 formkit-disabled:focus-within:ring-gray-400 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-primary-500',
-        input: 'w-full px-3 py-2 rounded-3xl',
+          'max-w-md relative flex ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2 rounded mb-1 formkit-disabled:focus-within:ring-gray-400 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-primary-500',
+        input: 'w-full px-3 py-2',
         listbox: 'bg-white drop-shadow-lg rounded overflow-hidden',
         listboxButton: 'flex w-12 self-stretch justify-center mx-auto',
         listitem:
@@ -72,9 +74,9 @@ export default {
       },
       'family:text': {
         inner:
-          'flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-primary-500  mb-1',
+          'flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-primary-500 rounded mb-1',
         input:
-          'w-full px-3 py-2 border-none text-base rounded-xl text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:shadow-outline',
+          'w-full px-3 py-2 border-none text-base text-gray-700 placeholder-gray-400',
       },
       'family:date': {
         inner:
@@ -98,7 +100,7 @@ export default {
           'shrink grow peer px-3 py-2 formkit-multiple:data-[has-multiple="true"]:mb-6',
         fileName: 'break-all grow text-ellipsis',
         fileRemove:
-          'relative z-[2] ml-auto text-[0px] hover:text-red-500 pl-2 peer-data-[has-multiple=true]:text-sm peer-data-[has-multiple=true]:text-blue-500 peer-data-[has-multiple=true]:ml-3 peer-data-[has-multiple=true]:mb-2 formkit-multiple:bottom-[0.15em] formkit-multiple:pl-0 formkit-multiple:ml-0 formkit-multiple:left-[1em] formkit-multiple:formkit-prefix-icon:left-[3.75em]',
+          'relative z-[2] ml-auto text-[0px] hover:text-red-500 pl-2 peer-data-[has-multiple=true]:text-sm peer-data-[has-multiple=true]:text-primary-500 peer-data-[has-multiple=true]:ml-3 peer-data-[has-multiple=true]:mb-2 formkit-multiple:bottom-[0.15em] formkit-multiple:pl-0 formkit-multiple:ml-0 formkit-multiple:left-[1em] formkit-multiple:formkit-prefix-icon:left-[3.75em]',
         fileRemoveIcon: 'block text-base w-3 relative z-[2]',
         inner:
           'relative max-w-md cursor-pointer formkit-multiple:[&>button]:absolute',
@@ -121,18 +123,18 @@ export default {
       },
       select: {
         inner:
-          'flex relative max-w-md items-center  mb-1 ring-1 ring-gray-400 focus-within:ring-primary-600 focus-within:ring-2 [&>span:first-child]:focus-within:text-primary-500',
+          'flex relative max-w-md items-center rounded mb-1 ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2 [&>span:first-child]:focus-within:text-primary-500',
         input:
-          'w-full pl-3 pr-8 py-2 border-none rounded-xl text-base text-gray-700 placeholder-gray-400 dark:text-gray-300 dark:placeholder-gray-100 formkit-multiple:p-0 dark:bg-gray-500',
+          'w-full pl-3 pr-8 py-2 border-none text-base text-gray-700 placeholder-gray-400 formkit-multiple:p-0 data-[placeholder="true"]:text-gray-400 formkit-multiple:data-[placeholder="true"]:text-inherit',
         selectIcon:
           'flex p-[3px] shrink-0 w-5 mr-2 -ml-[1.5em] h-full pointer-events-none',
         option: 'formkit-multiple:p-3 formkit-multiple:text-sm text-gray-700',
       },
       textarea: {
         inner:
-          'flex max-w-md  mb-1 ring-1 ring-gray-400 focus-within:ring-primary-500 [&>label:first-child]:focus-within:text-primary-500',
+          'flex max-w-md rounded mb-1 ring-1 ring-gray-400 focus-within:ring-primary-500 [&>label:first-child]:focus-within:text-primary-500',
         input:
-          'block w-full h-32 px-3 py-3 rounded-xl border-none text-base text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:shadow-outline',
+          'block w-full h-32 px-3 py-3 border-none text-base text-gray-700 placeholder-gray-400 focus:shadow-outline',
       },
     }),
   },
