@@ -1,6 +1,6 @@
 <template>
-  <nav class="w-full">
-    <div class="flex flex-row items-center justify-between py-6 w-full">
+  <nav class="w-full py-10">
+    <div class="flex flex-row items-center justify-between w-full">
       <div class="flex flex-row justify-around items-center">
         <NuxtLink to="/">
           <span
