@@ -36,6 +36,7 @@
           </li>
         </ul>
       </div>
+      <ColorModeSwitch />
       <div>
         <ul class="flex flex-row justify-between items-center">
           <li>
