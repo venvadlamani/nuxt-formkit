@@ -11,5 +11,11 @@
     "@nuxthq/ui": "npm:@nuxthq/ui-edge@latest",
     "@types/node": "^18",
     "nuxt": "^3.5.0"
+  },
+  "dependencies": {
+    "@formkit/icons": "^0.17.2",
+    "@formkit/nuxt": "^0.17.2",
+    "@formkit/themes": "^0.17.2",
+    "@nuxt/devtools": "^0.5.0"
   }
 }
