@@ -111,8 +111,8 @@ export default {
       },
       radio: {
         fieldset: 'ring-1 ring-gray-300',
-        legend: 'z-10 bg-gray-100 px-4',
-        help: 'px-4',
+        legend: 'z-10 bg-gray-100 pl-2 pr-4',
+        help: 'px-2',
         options: 'px-4 py-2',
         option: 'py-1',
         decorator: 'rounded-full',
