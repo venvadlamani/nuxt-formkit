@@ -23,7 +23,7 @@ export default {
         loaderIcon: 'inline-flex items-center w-4 text-gray-600 animate-spin',
         message: 'text-red-500 mb-1 text-xs',
         messages: 'list-none p-0 mt-1 mb-0',
-        outer: 'mb-4 formkit-disabled:opacity-50',
+        outer: 'mb-4 formkit-disabled:opacity-50 border border-red-500',
         prefixIcon:
           'w-10 flex self-stretch grow-0 shrink-0 rounded-tl rounded-bl border-r border-gray-400 bg-white bg-gradient-to-b from-transparent to-gray-200 [&>svg]:w-full [&>svg]:max-w-[1em] [&>svg]:max-h-[1em] [&>svg]:m-auto',
         suffixIcon:
@@ -45,7 +45,7 @@ export default {
       },
       'family:button': {
         input:
-          '$reset inline-flex items-center bg-primary-600 text-white text-sm font-normal py-3 px-6 rounded focus-visible:outline-2 focus-visible:outline-primary-600 focus-visible:outline-offset-2 formkit-disabled:bg-gray-400 formkit-loading:before:w-4 formkit-loading:before:h-4 formkit-loading:before:mr-2 formkit-loading:before:border formkit-loading:before:border-2 formkit-loading:before:border-r-transparent formkit-loading:before:rounded-3xl formkit-loading:before:border-white formkit-loading:before:animate-spin',
+          '$reset inline-flex items-center bg-primary-600 text-white text-sm font-normal py-3 px-6 focus-visible:outline-2 focus-visible:outline-primary-600 focus-visible:outline-offset-2 formkit-disabled:bg-gray-400 formkit-loading:before:w-4 formkit-loading:before:h-4 formkit-loading:before:mr-2 formkit-loading:before:border formkit-loading:before:border-2 formkit-loading:before:border-r-transparent formkit-loading:before:rounded-3xl formkit-loading:before:border-white formkit-loading:before:animate-spin rounded-xl',
         wrapper: 'mb-1',
         prefixIcon: '$reset block w-4 -ml-2 mr-2 stretch',
         suffixIcon: '$reset block w-4 ml-2 stretch',
@@ -74,9 +74,9 @@ export default {
       },
       'family:text': {
         inner:
-          'flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-primary-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-primary-500 rounded mb-1',
+          'flex items-center max-w-md ring-0 [&>label:first-child]:focus-within:text-primary-500 rounded mb-1',
         input:
-          'w-full px-3 py-2 border-none text-base text-gray-700 placeholder-gray-400',
+          'w-full px-3 py-2 border-none text-base text-gray-700 placeholder-gray-400 rounded-xl',
       },
       'family:date': {
         inner:
@@ -110,8 +110,8 @@ export default {
         noFilesIcon: 'w-4 mr-2',
       },
       radio: {
-        decorator: 'rounded-full',
-        decoratorIcon: 'w-5 p-[5px]',
+        decorator: 'rounded-full mr-2',
+        decoratorIcon: 'w-5 p-[5px] ',
       },
       range: {
         inner: '$reset flex items-center max-w-md',
@@ -132,9 +132,9 @@ export default {
       },
       textarea: {
         inner:
-          'flex max-w-md rounded mb-1 ring-1 ring-gray-400 focus-within:ring-primary-500 [&>label:first-child]:focus-within:text-primary-500',
+          'flex max-w-md rounded mb-1 ring-0 [&>label:first-child]:focus-within:text-primary-500',
         input:
-          'block w-full h-32 px-3 py-3 border-none text-base text-gray-700 placeholder-gray-400 focus:shadow-outline',
+          'block w-full h-32 px-3 py-3 border-none text-base text-gray-700 placeholder-gray-400 focus:shadow-outline rounded-xl',
       },
     }),
   },
