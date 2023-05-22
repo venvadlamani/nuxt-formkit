@@ -96,11 +96,6 @@
             you're facing
           </p>
           <div class="flex flex-row items-center justify-center">
-            <ul>
-              <li v-for="attachment in attachments" :key="attachment">
-                <img :src="attachment.path" />
-              </li>
-            </ul>
             <UButton
               icon="i-heroicons-plus-solid"
               size="xl"
@@ -116,6 +111,11 @@
               accept="image/png, image/gif, image/jpg, image/jpeg"
               @change="handleImageSelected"
             />
+            <ul>
+              <li v-for="attachment in attachments" :key="attachment">
+                <img :src="attachment.path" />
+              </li>
+            </ul>            
           </div>
         </div>
         <div class="mt-2.5">
