@@ -102,7 +102,7 @@
               color="gray"
               square
               variant="outline"
-              @click="handleImageClick"
+              ref="handleImageInput"
             />
             <input type="file" ref="imageInput" hidden />
           </div>
@@ -132,11 +132,11 @@
 <script setup lang="ts">
 const imageInput = ref();
 
-function handleImageClick() {
-  console.log('asdfsadfsdf');
+function handleImageInput() {
+  alert('sdfgdfg');
 }
 
 function handleSubmitSupportRequest() {
-  alert('awesome');
+  console.log('awesome');
 }
 </script>
