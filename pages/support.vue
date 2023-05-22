@@ -95,13 +95,17 @@
             Upload up to 3 screenshots that might be relevant to the issue that
             you're facing
           </p>
-          <UButton
-            icon="i-heroicons-plus-solid"
-            size="xl"
-            color="gray"
-            square
-            variant="outline"
-          />
+          <div>
+            <UButton
+              icon="i-heroicons-plus-solid"
+              size="xl"
+              color="gray"
+              square
+              variant="outline"
+              @click="handleImageClick"
+            />
+            <input type="file" ref="imageInput" hidden />
+          </div>
         </div>
         <div class="mt-2.5">
           <FormKit type="submit" label="Submit Request" />
@@ -126,7 +130,13 @@
   </div>
 </template>
 <script setup lang="ts">
+const imageInput = ref();
+
+function handleImageClick() {
+  console.log('asdfsadfsdf');
+}
+
 function handleSubmitSupportRequest() {
-  console.log('awesome');
+  alert('awesome');
 }
 </script>
