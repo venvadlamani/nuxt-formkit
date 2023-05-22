@@ -115,7 +115,7 @@
               <li v-for="attachment in attachments" :key="attachment">
                 <img :src="URL.createObjectURL(attachment)" />
               </li>
-            </ul>            
+            </ul>
           </div>
         </div>
         <div class="mt-2.5">
@@ -136,11 +136,6 @@
         >
           here
         </NuxtLink>
-        <pre>
-        <code>
-          <img :src="URL.createObjectURL(attachments[0])" />
-        </code>
-        </pre>
       </p>
     </div>
   </div>
