@@ -86,7 +86,7 @@
             label="Contact Preference"
             validation="required"
             help="Please select how you'd like to be contacted"
-            :options="{ email: 'Email', phone: 'Phone Call' }"
+            :options="['Email', 'Phone']"
           />
         </div>
         <div class="mt-2.5 py-6">
