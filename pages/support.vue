@@ -133,7 +133,7 @@
 const imageInput = ref();
 
 function handleImageInput() {
-  alert('sdfgdfg');
+  imageInput.value.click();
 }
 
 function handleSubmitSupportRequest() {
