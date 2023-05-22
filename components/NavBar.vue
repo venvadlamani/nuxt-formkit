@@ -41,7 +41,7 @@
         <ul class="flex flex-row justify-between items-center">
           <li>
             <UButton
-              icon="i-heroicons-arrow-right-on-rectangle-20-solid"
+              icon="i-heroicons-phone-arrow-down-left"
               size="lg"
               color="gray"
               variant="ghost"
