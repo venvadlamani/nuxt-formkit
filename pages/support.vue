@@ -156,7 +156,7 @@ function handleImageSelected(event) {
     alert('You cant add any more');
   } else {
     attachments.value.push(file);
-    console.log(reader.readAsDataURL(file[0]));
+    console.log(reader.readAsDataURL(file));
     displayAttachments.value.push(reader.readAsDataURL(file));
   }
 }
