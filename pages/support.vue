@@ -102,7 +102,7 @@
               color="gray"
               square
               variant="outline"
-              ref="handleImageInput"
+              @click="handleImageInput"
             />
             <input type="file" ref="imageInput" hidden />
           </div>
