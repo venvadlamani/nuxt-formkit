@@ -95,7 +95,7 @@
             Upload up to 3 screenshots that might be relevant to the issue that
             you're facing
           </p>
-          <div class="flex flex-row items-center justify-center">
+          <div class="flex flex-row items-center justify-start">
             <UButton
               icon="i-heroicons-plus-solid"
               size="xl"
@@ -113,7 +113,7 @@
             />
             <ul>
               <li v-for="attachment in attachments" :key="attachment">
-                <img :src="attachment.path" />
+                <img :src="URL.createObjectURL(attachment)" />
               </li>
             </ul>            
           </div>
@@ -138,7 +138,7 @@
         </NuxtLink>
         <pre>
         <code>
-        {{ attachments }}
+          <img :src="URL.createObjectURL(attachments[0])" />
         </code>
         </pre>
       </p>
@@ -155,7 +155,6 @@ function handleImageInput() {
 
 function handleImageSelected(event) {
   const file = event.target.files[0];
-  alert(URL.createObjectURL(file))
   if (attachments.value.count === 3) {
     alert('You cant add any more');
   } else {
