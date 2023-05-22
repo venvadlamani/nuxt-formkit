@@ -108,12 +108,12 @@
               type="file"
               ref="imageInput"
               hidden
-              accept="image/png, image/gif, image/jpg, image/jpeg"
+              accept="image/*"
               @change="handleImageSelected"
             />
             <ul>
-              <li v-for="attachment in attachments" :key="attachment">
-                <img :src="URL.createObjectURL(attachment)" />
+              <li v-for="attachment in displayAttachments" :key="attachment">
+                <img :src="attachment" />
               </li>
             </ul>
           </div>
@@ -143,17 +143,20 @@
 <script setup lang="ts">
 const imageInput = ref();
 const attachments = ref([]);
+const displayAttachments = ref([]);
 
 function handleImageInput() {
   imageInput.value.click();
 }
 
 function handleImageSelected(event) {
+  const reader = new FileReader();
   const file = event.target.files[0];
   if (attachments.value.count === 3) {
     alert('You cant add any more');
   } else {
     attachments.value.push(file);
+    displayAttachments.value.push(reader.readAsDataURL(files));
   }
 }
 
