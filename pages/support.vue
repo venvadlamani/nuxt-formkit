@@ -104,7 +104,13 @@
               variant="outline"
               @click="handleImageInput"
             />
-            <input type="file" ref="imageInput" hidden />
+            <input
+              type="file"
+              ref="imageInput"
+              hidden
+              accept="image/png, image/gif, image/jpg, image/jpeg"
+              @change="handleImageSelected"
+            />
           </div>
         </div>
         <div class="mt-2.5">
@@ -131,9 +137,19 @@
 </template>
 <script setup lang="ts">
 const imageInput = ref();
+const attachments = ref([]);
 
 function handleImageInput() {
   imageInput.value.click();
+}
+
+function handleImageSelected(event) {
+  const file = event.target.files[0];
+  if (attachments.value.count === 3) {
+    alert('You cant add any more');
+  } else {
+    attachments.value.push(file);
+  }
 }
 
 function handleSubmitSupportRequest() {
